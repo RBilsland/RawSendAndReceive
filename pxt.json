@@ -1,0 +1,23 @@
+{
+    "name": "my-super-radio",
+    "version": "0.0.1",
+    "files": [
+        "README.md",
+        "config.json",
+        "main.ts",
+        "shims.d.ts",
+        "radio.cpp",
+        "my-custom-math.h",   
+        "my-custom-math.cpp"  
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ],
+    "dependencies": {
+        "core": "*",
+        "radio": "*"
+    }
+}
