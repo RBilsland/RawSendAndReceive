@@ -24,6 +24,7 @@ namespace myExtension {
     void startRawReceiver() {
         // Ensure radio is enabled
         uBit.radio.enable();
+        uBit.radio.setTransmitPower(7);
         
         // Register our custom C++ handler to listen for radio datagrams
         if (EventModel::defaultEventBus) {

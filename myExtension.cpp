@@ -9,6 +9,9 @@ namespace myExtension {
     void sendRawPacket(Buffer data) {
         if (!data) return;
 
+        // Ensure radio is enabled
+        uBit.radio.enable();
+
         // 1. Wrap the PXT Buffer in a ManagedBuffer
         // This ensures the memory is treated correctly by the C++ runtime
         ManagedBuffer buf(data);
